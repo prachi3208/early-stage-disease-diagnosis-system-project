@@ -2,8 +2,8 @@ import os
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import load_model # type: ignore
+from tensorflow.keras.preprocessing import image # type: ignore
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
